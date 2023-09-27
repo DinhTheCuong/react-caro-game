@@ -1,51 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font: 34px "Century Gothic", Futura, sans-serif;
-    margin: 20px;
-}
-
-ol,
-ul {
-    padding-left: 50px;
-}
-
-.board-row:after {
-    clear: both;
-    content: "";
-    display: table;
-}
-
-.status {
-    margin-bottom: 10px;
+  font-family: 34px 'Century Gothic', Futura, sans-serif;
 }
 
 .square {
-    background: #fff;
-    border: 1px solid #999;
-    float: left;
-    font-size: 54px;
-    font-weight: bold;
-    line-height: 64px;
-    height: 64px;
-    margin-right: -1px;
-    margin-top: -1px;
-    padding: 0;
-    text-align: center;
-    width: 64px;
-}
-
-.square:focus {
-    outline: none;
-}
-
-.kbd-navigation .square:focus {
-    background: #ddd;
-}
-
-.game {
-    display: flex;
-    flex-direction: row;
-}
-
-.game-info {
-    margin-left: 20px;
+  background: #fff;
+  border: 2px solid #282c34;
+  float: left;
+  font-size: 72px;
+  font-weight: bold;
+  text-align: center;
+  height: 120px;
+  width: 120px;
 }
